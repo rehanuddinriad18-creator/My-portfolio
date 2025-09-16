@@ -1,0 +1,310 @@
+:root {
+    --purple: #2F192E;
+    --purple-light: #30192D;
+    --dark-blue: #012677;
+    --blue: #5c65c0;
+    --skyblue: #00b4fc;
+    --light-blue: #005bc5;
+    --dark-pink: #f64c57;
+    --dark-magenta: #e21b5a;
+    --light-green: #61e2c2;
+    --light-purple: #d9abff;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+
+}
+
+body {
+    background: linear-gradient(rgb(175, 89, 43), black);
+    overflow-x: hidden;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    max-width: 100%;
+
+}
+
+.profile-card {
+    background: #111;
+    width: 400px;
+    padding: 3rem;
+    border-radius: 1 0px;
+    min-height: 400px;
+    position: relative;
+    color: white;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.profile-card .profile-pic {
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.profile-card .profile-pic img {
+    border-radius: 10px;
+
+}
+
+.profile-card .profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-details .intro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-details .intro h2 {
+    margin-top: 20px;
+
+}
+
+.profile-details .intro h4 {
+    background: #1d1d1d;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 8px;
+
+}
+
+.profile-details .intro .social {
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+}
+
+.profile-details .intro .social i {
+    color: white;
+    font-size: 16px;
+    background-color: #222;
+    margin: 5px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    transition: .5s;
+
+}
+
+.profile-details .intro .social i:hover {
+    transform: scale(1.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.profile-details .contact-info {
+    background-color: #1d1d1d;
+    padding: 25px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.profile-details .contact-info .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px 15;
+    margin-bottom: 10px;
+
+}
+
+.contact-info .row .icon {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: #111;
+    text-align: center;
+    color: white;
+    transition: .5s;
+}
+
+.row .icon:hover {
+    transform: scale(1.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.row .content {
+    min-width: 80%;
+}
+
+.row .content span {
+    font-size: 12px;
+}
+
+.download-btn {
+    background: black;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    margin-top: 1.5rem;
+    border: none;
+}
+
+.download-btn:hover {
+    transition: .5s ease;
+    background-color: rgb(141, 70, 32);
+
+}
+
+/***about sec***/
+.about {
+    background-color: #111;
+    max-width: 800px;
+    padding: 6rem 7rem;
+    border-radius: 10px;
+}
+
+.about h1 {
+    color: white;
+    margin-bottom: 1.1rem;
+    position: relative;
+    display: inline-block;
+    font-size: 3.5rem;
+}
+
+
+.about h2 {
+    color: white;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+
+
+}
+
+.about p {
+    color: #555;
+    margin: 1.5rem 0;
+
+}
+
+.about .work {
+    display: grid;
+    flex-wrap: wrap;
+
+}
+
+.work .workbox {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    border: 1px solid #333;
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+.work .workbox .desc {
+    width: 75%;
+    color: #555;
+}
+
+.work .workbox .desc h3 {
+    color: white;
+    margin-bottom: 3px;
+
+
+
+}
+
+.work .workbox .desc p {
+    margin: 0px;
+    margin-bottom: 10px;
+    flex: 1 1 480px;
+    max-width: 1024;
+
+}
+
+@media screen and (max-width:1024px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .work .workbox .desc p {
+        width: 100%;
+    }
+
+    .about h1::after {
+        overflow: hidden;
+    }
+
+}
+
+
+
+@media screen and (max-width:786px) {
+    .container {
+
+        justify-content: center;
+        width: 100%;
+    }
+
+    .work .workbox .desc p {
+        width: 100%;
+        display: flex;
+    }
+
+
+}
+
+
+@media screen and (max-width:480px) {
+    .container {
+
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+
+    .work .workbox .desc p {
+        width: 100%;
+    }
+
+
+}
+
+
+@media screen and (max-width:320px) {
+    .container {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .work .workbox .desc p {
+        width: 100%;
+
+    }
+
+
+}
